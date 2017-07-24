@@ -93,12 +93,12 @@ require_relative '../models/address_book'
    def view_entry_by_number
        system "clear"
        print "Enter entry number: "
-       entry_num= gets.chomp.to_i
-        until entry_num <= address_book.entries.length && entry_num > 0 && entry_num!=0 do
+       entry_num = gets.chomp.to_i
+        until entry_num <= address_book.entries.length && entry_num > 0 && entry_num != 0 do
          system "clear"
          puts "Invalid entry. Try again"
          print "Enter entry number: "
-         entry_num=gets.chomp.to_i
+         entry_num = gets.chomp.to_i
         end
        puts address_book.entries[entry_num-1]
        entry_submenu(address_book.entries[entry_num-1])
