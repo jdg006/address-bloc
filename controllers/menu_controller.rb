@@ -110,6 +110,6 @@ require_relative '../models/address_book'
          puts "#{selection} is not a valid input"
          entry_submenu(entry)
      end
-   end
+    end
  end
    
